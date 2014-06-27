@@ -1,32 +1,24 @@
 package com.example.iulia.myapplication;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+import com.example.iulia.myapplication.R;
 
-
-public class MyActivity extends Activity {
-
-    public void goToCash(View v) {
-        Intent myIntent = new Intent(MyActivity.this, CashFlow.class);
-
-        MyActivity.this.startActivity(myIntent);
-    }
+public class CashFlow extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
+        setContentView(R.layout.activity_cash_flow);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my, menu);
+        getMenuInflater().inflate(R.menu.cash_flow, menu);
         return true;
     }
 
